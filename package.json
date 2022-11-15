@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/m0ntz/FavFlix-client/issues"
   },
-  "homepage": "https://github.com/m0ntz/FavFlix-client#readme"
+  "homepage": "https://github.com/m0ntz/FavFlix-client#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
+    "process": "^0.11.10"
+  }
 }
