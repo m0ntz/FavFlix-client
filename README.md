@@ -14,7 +14,10 @@ npm install -g parcel-bundler
 Clone
 
 ```
-https://github.com/m0ntz/FavFlix-client/tree/3.2-JavaScript-and-Parcel
+gh repo clone m0ntz/FavFlix-client
+cd Favflix-client
+npm start
+
 ```
 
 To test project server running at http://localhost:1234
