@@ -1,3 +1,5 @@
+Server running at http://localhost:1234
+
 Essential Views and Features:
 
 Main view
