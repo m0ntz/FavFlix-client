@@ -1,15 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { MainView } from "./components/main-view/main-view";
 
 import "./index.scss";
 
 class FavFlixApplication extends React.Component {
   render() {
-    return (
-      <div className="favflix">
-        <div>Good morning</div>
-      </div>
-    );
+    return <MainView />;
   }
 }
 
