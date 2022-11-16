@@ -1,4 +1,22 @@
-Server running at http://localhost:1234
+# FavFlix (Client)
+
+## Setup
+
+To install parcel
+
+npm
+
+```
+npm install -g parcel-bundler
+```
+
+Clone
+
+```
+https://github.com/m0ntz/FavFlix-client/tree/3.2-JavaScript-and-Parcel
+```
+
+To test project server running at http://localhost:1234
 
 Essential Views and Features:
 
