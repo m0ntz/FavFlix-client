@@ -3,6 +3,7 @@
 ## Setup
 
 To install parcel
+https://en.parceljs.org/getting_started.html
 
 npm
 
@@ -18,7 +19,7 @@ https://github.com/m0ntz/FavFlix-client/tree/3.2-JavaScript-and-Parcel
 
 To test project server running at http://localhost:1234
 
-Essential Views and Features:
+## Essential Views and Features:
 
 Main view
 ● Returns a list of ALL movies to the user (each listed item with an image, title, and description)
