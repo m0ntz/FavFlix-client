@@ -17,7 +17,12 @@ Clone
 gh repo clone m0ntz/FavFlix-client
 cd Favflix-client
 npm start
+```
 
+Run
+
+```
+parcel src/index.html
 ```
 
 To test project server running at http://localhost:1234
