@@ -15,7 +15,7 @@ export class MainView extends React.Component {
           Genre: {
             Name: "Fantasy",
             Description:
-              "SFantasy films are films that belong to the fantasy genre with fantastic themes, usually magic, supernatural events, mythology, folklore, or exotic fantasy worlds. ",
+              "Fantasy films are films that belong to the fantasy genre with fantastic themes, usually magic, supernatural events, mythology, folklore, or exotic fantasy worlds. ",
           },
           Director: {
             Name: "Chris Columbus",
