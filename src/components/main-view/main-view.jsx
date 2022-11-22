@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 
+import { RegistrationView } from "../registration-view/registration-view";
 import { LoginView } from "../login-view/login-view";
 import { MovieCard } from "../movie-card/movie-card";
 import { MovieView } from "../movie-view/movie-view";
@@ -12,6 +13,7 @@ export class MainView extends React.Component {
       movies: [],
       selectedMovie: null,
       user: null,
+      registered: true,
     };
   }
 
@@ -40,11 +42,25 @@ export class MainView extends React.Component {
     });
   }
 
-  render() {
-    const { movies, selectedMovie } = this.state;
+  toRegister(registered) {
+    this.setState({
+      registered,
+    });
+  }
 
+  render() {
+    const { movies, selectedMovie, user, registered } = this.state;
+
+    if (!registered) return <RegistrationView />;
+
+    /* If there's no user, the LoginView will render. If the user is logged in, the user data is passed to the LoginView */
     if (!user)
-      return <LoginView onLoggedIn={(user) => this.onLoggedIn(user)} />;
+      return (
+        <LoginView
+          onLoggedIn={(user) => this.onLoggedIn(user)}
+          toRegister={(registered) => this.toRegister(registered)}
+        />
+      );
 
     if (movies.length === 0) return <div className="main-view" />;
 
