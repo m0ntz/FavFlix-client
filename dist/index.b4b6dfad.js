@@ -24640,7 +24640,7 @@ class MainView extends (0, _reactDefault.default).Component {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"db5v7","../movie-card/movie-card":"bwuIu","../movie-view/movie-view":"ggaUx","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"buGY4"}],"db5v7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../movie-card/movie-card":"bwuIu","../movie-view/movie-view":"ggaUx","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"buGY4"}],"jo6P5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Axios", ()=>Axios);
@@ -24661,7 +24661,7 @@ var _axiosJsDefault = parcelHelpers.interopDefault(_axiosJs);
 const { Axios , AxiosError , CanceledError , isCancel , CancelToken , VERSION , all , Cancel , isAxiosError , spread , toFormData  } = (0, _axiosJsDefault.default);
 exports.default = (0, _axiosJsDefault.default);
 
-},{"./lib/axios.js":"kyafH","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"kyafH":[function(require,module,exports) {
+},{"./lib/axios.js":"63MyY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"63MyY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./utils.js");
@@ -24741,7 +24741,7 @@ axios.formToJSON = (thing)=>{
 };
 exports.default = axios;
 
-},{"./utils.js":"hjkOY","./helpers/bind.js":"ZUgBo","./core/Axios.js":"hnAgD","./core/mergeConfig.js":"7u9Zz","./defaults/index.js":"228DB","./helpers/formDataToJSON.js":"lIgAq","./cancel/CanceledError.js":"74Q9a","./cancel/CancelToken.js":"fui4T","./cancel/isCancel.js":"eQhdu","./env/data.js":"lJQxU","./helpers/toFormData.js":"f8oCv","./core/AxiosError.js":"gYd30","./helpers/spread.js":"crOEb","./helpers/isAxiosError.js":"daypg","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"hjkOY":[function(require,module,exports) {
+},{"./utils.js":"5By4s","./helpers/bind.js":"haRQb","./core/Axios.js":"cpqD8","./core/mergeConfig.js":"b85oP","./defaults/index.js":"hXfHM","./helpers/formDataToJSON.js":"01RfH","./cancel/CanceledError.js":"9PwCG","./cancel/CancelToken.js":"45wzn","./cancel/isCancel.js":"a0VmF","./env/data.js":"h29L9","./helpers/toFormData.js":"ajoez","./core/AxiosError.js":"3u8Tl","./helpers/spread.js":"dyQ8N","./helpers/isAxiosError.js":"eyiLq","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"5By4s":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _bindJs = require("./helpers/bind.js");
@@ -25214,7 +25214,7 @@ exports.default = {
     toFiniteNumber
 };
 
-},{"./helpers/bind.js":"ZUgBo","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"ZUgBo":[function(require,module,exports) {
+},{"./helpers/bind.js":"haRQb","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"haRQb":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -25255,7 +25255,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"hnAgD":[function(require,module,exports) {
+},{}],"cpqD8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -25423,7 +25423,7 @@ const validators = (0, _validatorJsDefault.default).validators;
 });
 exports.default = Axios;
 
-},{"./../utils.js":"hjkOY","../helpers/buildURL.js":"cZOEI","./InterceptorManager.js":"YP7hM","./dispatchRequest.js":"9hbPY","./mergeConfig.js":"7u9Zz","./buildFullPath.js":"6Bio1","../helpers/validator.js":"39YKD","./AxiosHeaders.js":"6fXNE","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"cZOEI":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","../helpers/buildURL.js":"3bwC2","./InterceptorManager.js":"1VRIM","./dispatchRequest.js":"6sjJ6","./mergeConfig.js":"b85oP","./buildFullPath.js":"1I5TW","../helpers/validator.js":"9vgkY","./AxiosHeaders.js":"cgSSx","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"3bwC2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -25457,7 +25457,7 @@ function buildURL(url, params, options) {
 }
 exports.default = buildURL;
 
-},{"../utils.js":"hjkOY","../helpers/AxiosURLSearchParams.js":"63o3S","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"63o3S":[function(require,module,exports) {
+},{"../utils.js":"5By4s","../helpers/AxiosURLSearchParams.js":"hz84m","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"hz84m":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _toFormDataJs = require("./toFormData.js");
@@ -25512,7 +25512,7 @@ prototype.toString = function toString(encoder) {
 };
 exports.default = AxiosURLSearchParams;
 
-},{"./toFormData.js":"f8oCv","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"f8oCv":[function(require,module,exports) {
+},{"./toFormData.js":"ajoez","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"ajoez":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -25685,7 +25685,7 @@ const predicates = (0, _utilsJsDefault.default).toFlatObject((0, _utilsJsDefault
 }
 exports.default = toFormData;
 
-},{"buffer":"fCgem","../utils.js":"hjkOY","../core/AxiosError.js":"gYd30","../env/classes/FormData.js":"9KdXC","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"fCgem":[function(require,module,exports) {
+},{"buffer":"fCgem","../utils.js":"5By4s","../core/AxiosError.js":"3u8Tl","../env/classes/FormData.js":"lSnyf","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"fCgem":[function(require,module,exports) {
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -27085,7 +27085,7 @@ exports.write = function(buffer, value, offset, isLE, mLen, nBytes) {
     buffer[offset + i - d] |= s * 128;
 };
 
-},{}],"gYd30":[function(require,module,exports) {
+},{}],"3u8Tl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -27173,17 +27173,17 @@ AxiosError.from = (error, code, config, request, response, customProps)=>{
 };
 exports.default = AxiosError;
 
-},{"../utils.js":"hjkOY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"9KdXC":[function(require,module,exports) {
+},{"../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"lSnyf":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _formData = require("form-data");
 var _formDataDefault = parcelHelpers.interopDefault(_formData);
 exports.default = (0, _formDataDefault.default);
 
-},{"form-data":"9bfvJ","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"9bfvJ":[function(require,module,exports) {
+},{"form-data":"2TZrR","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"2TZrR":[function(require,module,exports) {
 /* eslint-env browser */ module.exports = typeof self == "object" ? self.FormData : window.FormData;
 
-},{}],"YP7hM":[function(require,module,exports) {
+},{}],"1VRIM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -27242,7 +27242,7 @@ class InterceptorManager {
 }
 exports.default = InterceptorManager;
 
-},{"./../utils.js":"hjkOY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"9hbPY":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"6sjJ6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _transformDataJs = require("./transformData.js");
@@ -27292,7 +27292,7 @@ function dispatchRequest(config) {
 }
 exports.default = dispatchRequest;
 
-},{"./transformData.js":"g35rg","../cancel/isCancel.js":"eQhdu","../defaults/index.js":"228DB","../cancel/CanceledError.js":"74Q9a","../core/AxiosHeaders.js":"6fXNE","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"g35rg":[function(require,module,exports) {
+},{"./transformData.js":"eRqJY","../cancel/isCancel.js":"a0VmF","../defaults/index.js":"hXfHM","../cancel/CanceledError.js":"9PwCG","../core/AxiosHeaders.js":"cgSSx","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"eRqJY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -27315,7 +27315,7 @@ function transformData(fns, response) {
 }
 exports.default = transformData;
 
-},{"./../utils.js":"hjkOY","../defaults/index.js":"228DB","../core/AxiosHeaders.js":"6fXNE","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"228DB":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","../defaults/index.js":"hXfHM","../core/AxiosHeaders.js":"cgSSx","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"hXfHM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -27464,7 +27464,7 @@ const defaults = {
 });
 exports.default = defaults;
 
-},{"process":"d5jf4","../utils.js":"hjkOY","../core/AxiosError.js":"gYd30","./transitional.js":"e1mh3","../helpers/toFormData.js":"f8oCv","../helpers/toURLEncodedForm.js":"hSZPY","../platform/index.js":"32ZOj","../helpers/formDataToJSON.js":"lIgAq","../adapters/index.js":"bEiag","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"e1mh3":[function(require,module,exports) {
+},{"process":"d5jf4","../utils.js":"5By4s","../core/AxiosError.js":"3u8Tl","./transitional.js":"lM32f","../helpers/toFormData.js":"ajoez","../helpers/toURLEncodedForm.js":"9hjry","../platform/index.js":"7tDev","../helpers/formDataToJSON.js":"01RfH","../adapters/index.js":"aeXzy","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"lM32f":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -27474,7 +27474,7 @@ exports.default = {
     clarifyTimeoutError: false
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"hSZPY":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"9hjry":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -27497,14 +27497,14 @@ function toURLEncodedForm(data, options) {
 }
 exports.default = toURLEncodedForm;
 
-},{"../utils.js":"hjkOY","./toFormData.js":"f8oCv","../platform/index.js":"32ZOj","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"32ZOj":[function(require,module,exports) {
+},{"../utils.js":"5By4s","./toFormData.js":"ajoez","../platform/index.js":"7tDev","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"7tDev":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _indexJsDefault.default));
 var _indexJs = require("./node/index.js");
 var _indexJsDefault = parcelHelpers.interopDefault(_indexJs);
 
-},{"./node/index.js":"8eOIf","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"8eOIf":[function(require,module,exports) {
+},{"./node/index.js":"cVeqE","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"cVeqE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _urlsearchParamsJs = require("./classes/URLSearchParams.js");
@@ -27550,7 +27550,7 @@ exports.default = {
     ]
 };
 
-},{"./classes/URLSearchParams.js":"atMT5","./classes/FormData.js":"ivu3I","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"atMT5":[function(require,module,exports) {
+},{"./classes/URLSearchParams.js":"5cIHE","./classes/FormData.js":"7i1jd","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"5cIHE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _axiosURLSearchParamsJs = require("../../../helpers/AxiosURLSearchParams.js");
@@ -27558,13 +27558,13 @@ var _axiosURLSearchParamsJsDefault = parcelHelpers.interopDefault(_axiosURLSearc
 "use strict";
 exports.default = typeof URLSearchParams !== "undefined" ? URLSearchParams : (0, _axiosURLSearchParamsJsDefault.default);
 
-},{"../../../helpers/AxiosURLSearchParams.js":"63o3S","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"ivu3I":[function(require,module,exports) {
+},{"../../../helpers/AxiosURLSearchParams.js":"hz84m","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"7i1jd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
 exports.default = FormData;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"lIgAq":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"01RfH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -27639,7 +27639,7 @@ var _utilsJsDefault = parcelHelpers.interopDefault(_utilsJs);
 }
 exports.default = formDataToJSON;
 
-},{"../utils.js":"hjkOY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"bEiag":[function(require,module,exports) {
+},{"../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"aeXzy":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -27665,7 +27665,7 @@ exports.default = {
     adapters
 };
 
-},{"../utils.js":"hjkOY","./http.js":"5h4Sd","./xhr.js":"5h4Sd","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"5h4Sd":[function(require,module,exports) {
+},{"../utils.js":"5By4s","./http.js":"ldm57","./xhr.js":"ldm57","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"ldm57":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -27845,7 +27845,7 @@ function xhrAdapter(config) {
 }
 exports.default = xhrAdapter;
 
-},{"./../utils.js":"hjkOY","./../core/settle.js":"eV5fO","./../helpers/cookies.js":"llhAy","./../helpers/buildURL.js":"cZOEI","../core/buildFullPath.js":"6Bio1","./../helpers/isURLSameOrigin.js":"fiWSt","../defaults/transitional.js":"e1mh3","../core/AxiosError.js":"gYd30","../cancel/CanceledError.js":"74Q9a","../helpers/parseProtocol.js":"lsNdQ","../platform/index.js":"32ZOj","../core/AxiosHeaders.js":"6fXNE","../helpers/speedometer.js":"ikWQI","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"eV5fO":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","./../core/settle.js":"dD9aC","./../helpers/cookies.js":"4WJjt","./../helpers/buildURL.js":"3bwC2","../core/buildFullPath.js":"1I5TW","./../helpers/isURLSameOrigin.js":"lxXtv","../defaults/transitional.js":"lM32f","../core/AxiosError.js":"3u8Tl","../cancel/CanceledError.js":"9PwCG","../helpers/parseProtocol.js":"7NfWU","../platform/index.js":"7tDev","../core/AxiosHeaders.js":"cgSSx","../helpers/speedometer.js":"gQeo1","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"dD9aC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _axiosErrorJs = require("./AxiosError.js");
@@ -27861,7 +27861,7 @@ function settle(resolve, reject, response) {
 }
 exports.default = settle;
 
-},{"./AxiosError.js":"gYd30","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"llhAy":[function(require,module,exports) {
+},{"./AxiosError.js":"3u8Tl","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"4WJjt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -27900,7 +27900,7 @@ function nonStandardBrowserEnv() {
     };
 }();
 
-},{"./../utils.js":"hjkOY","../platform/index.js":"32ZOj","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"6Bio1":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","../platform/index.js":"7tDev","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"1I5TW":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _isAbsoluteURLJs = require("../helpers/isAbsoluteURL.js");
@@ -27914,7 +27914,7 @@ function buildFullPath(baseURL, requestedURL) {
 }
 exports.default = buildFullPath;
 
-},{"../helpers/isAbsoluteURL.js":"1FSiT","../helpers/combineURLs.js":"5Bed0","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"1FSiT":[function(require,module,exports) {
+},{"../helpers/isAbsoluteURL.js":"jD6NM","../helpers/combineURLs.js":"brOWK","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"jD6NM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -27926,7 +27926,7 @@ function isAbsoluteURL(url) {
 }
 exports.default = isAbsoluteURL;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"5Bed0":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"brOWK":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -27935,7 +27935,7 @@ function combineURLs(baseURL, relativeURL) {
 }
 exports.default = combineURLs;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"fiWSt":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"lxXtv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -27991,7 +27991,7 @@ function nonStandardBrowserEnv() {
     };
 }();
 
-},{"./../utils.js":"hjkOY","../platform/index.js":"32ZOj","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"74Q9a":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","../platform/index.js":"7tDev","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"9PwCG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _axiosErrorJs = require("../core/AxiosError.js");
@@ -28017,7 +28017,7 @@ var _utilsJsDefault = parcelHelpers.interopDefault(_utilsJs);
 });
 exports.default = CanceledError;
 
-},{"../core/AxiosError.js":"gYd30","../utils.js":"hjkOY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"lsNdQ":[function(require,module,exports) {
+},{"../core/AxiosError.js":"3u8Tl","../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"7NfWU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -28027,7 +28027,7 @@ function parseProtocol(url) {
 }
 exports.default = parseProtocol;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"6fXNE":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"cgSSx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -28208,7 +28208,7 @@ AxiosHeaders.accessor([
 (0, _utilsJsDefault.default).freezeMethods(AxiosHeaders);
 exports.default = AxiosHeaders;
 
-},{"../utils.js":"hjkOY","../helpers/parseHeaders.js":"brMO9","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"brMO9":[function(require,module,exports) {
+},{"../utils.js":"5By4s","../helpers/parseHeaders.js":"kqDd5","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"kqDd5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -28268,7 +28268,7 @@ const ignoreDuplicateOf = (0, _utilsJsDefault.default).toObjectSet([
     return parsed;
 };
 
-},{"./../utils.js":"hjkOY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"ikWQI":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"gQeo1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -28306,7 +28306,7 @@ parcelHelpers.defineInteropFlag(exports);
 }
 exports.default = speedometer;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"eQhdu":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"a0VmF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -28315,7 +28315,7 @@ function isCancel(value) {
 }
 exports.default = isCancel;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"7u9Zz":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"b85oP":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("../utils.js");
@@ -28388,7 +28388,7 @@ function mergeConfig(config1, config2) {
 }
 exports.default = mergeConfig;
 
-},{"../utils.js":"hjkOY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"39YKD":[function(require,module,exports) {
+},{"../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"9vgkY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _dataJs = require("../env/data.js");
@@ -28462,13 +28462,13 @@ exports.default = {
     validators
 };
 
-},{"../env/data.js":"lJQxU","../core/AxiosError.js":"gYd30","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"lJQxU":[function(require,module,exports) {
+},{"../env/data.js":"h29L9","../core/AxiosError.js":"3u8Tl","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"h29L9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "VERSION", ()=>VERSION);
 const VERSION = "1.1.3";
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"fui4T":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"45wzn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _canceledErrorJs = require("./CanceledError.js");
@@ -28555,7 +28555,7 @@ var _canceledErrorJsDefault = parcelHelpers.interopDefault(_canceledErrorJs);
 }
 exports.default = CancelToken;
 
-},{"./CanceledError.js":"74Q9a","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"crOEb":[function(require,module,exports) {
+},{"./CanceledError.js":"9PwCG","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"dyQ8N":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 "use strict";
@@ -28566,7 +28566,7 @@ function spread(callback) {
 }
 exports.default = spread;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"daypg":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"eyiLq":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _utilsJs = require("./../utils.js");
@@ -28577,7 +28577,7 @@ function isAxiosError(payload) {
 }
 exports.default = isAxiosError;
 
-},{"./../utils.js":"hjkOY","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"bwuIu":[function(require,module,exports) {
+},{"./../utils.js":"5By4s","@parcel/transformer-js/src/esmodule-helpers.js":"gvtxz"}],"bwuIu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$67b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28760,6 +28760,15 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 class MovieView extends (0, _reactDefault.default).Component {
+    keypressCallback(event) {
+        console.log(event.key);
+    }
+    componentDidMount() {
+        document.addEventListener("keypress", this.keypressCallback);
+    }
+    componentWillUnmount() {
+        document.removeEventListener("keypress", this.keypressCallback);
+    }
     render() {
         const { movie , onBackClick  } = this.props;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28768,18 +28777,18 @@ class MovieView extends (0, _reactDefault.default).Component {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "movie-poster",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        crossorigin: "anonymous",
+                        crossOrigin: "anonymous",
                         height: "500",
                         width: "330",
                         src: movie.ImageURL
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
-                        lineNumber: 10,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/components/movie-view/movie-view.jsx",
-                    lineNumber: 9,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28790,7 +28799,7 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: "Title: "
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 18,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28798,13 +28807,13 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: movie.Title
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 19,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/movie-view/movie-view.jsx",
-                    lineNumber: 17,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28815,7 +28824,7 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: "Genre: "
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 22,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28823,13 +28832,13 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: movie.Genre.Name
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 23,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/movie-view/movie-view.jsx",
-                    lineNumber: 21,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28840,7 +28849,7 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: "Description: "
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 26,
+                            lineNumber: 36,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28848,13 +28857,13 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: movie.Description
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 27,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/movie-view/movie-view.jsx",
-                    lineNumber: 25,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28865,7 +28874,7 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: "Director: "
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 30,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28873,13 +28882,13 @@ class MovieView extends (0, _reactDefault.default).Component {
                             children: movie.Director.Name
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
-                            lineNumber: 31,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/movie-view/movie-view.jsx",
-                    lineNumber: 29,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -28889,13 +28898,13 @@ class MovieView extends (0, _reactDefault.default).Component {
                     children: "Back"
                 }, void 0, false, {
                     fileName: "src/components/movie-view/movie-view.jsx",
-                    lineNumber: 33,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/movie-view/movie-view.jsx",
-            lineNumber: 8,
+            lineNumber: 18,
             columnNumber: 7
         }, this);
     }
