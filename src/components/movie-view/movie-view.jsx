@@ -21,15 +21,15 @@ export class MovieView extends React.Component {
 
     return (
       <Container className="movie-view">
-        <Row className="movie-title mb-4 mt-4">
+        <Row className="movie-title mb-4 mt-4" xs={12} sm={12} md={7}>
           <Col className="value">{movie.Title}</Col>
         </Row>
         <Row className="mb-3">
           <Col className="movie-poster  mb-4" md={5} lg={4}>
             <Image
               crossOrigin="anonymous"
-              height="400"
-              width="320"
+              height="350"
+              width="270"
               src={movie.ImageURL}
             />
           </Col>

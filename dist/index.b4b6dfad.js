@@ -32142,6 +32142,9 @@ class MovieView extends (0, _reactDefault.default).Component {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Row), {
                     className: "movie-title mb-4 mt-4",
+                    xs: 12,
+                    sm: 12,
+                    md: 7,
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Col), {
                         className: "value",
                         children: movie.Title
@@ -32163,8 +32166,8 @@ class MovieView extends (0, _reactDefault.default).Component {
                         lg: 4,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Image), {
                             crossOrigin: "anonymous",
-                            height: "400",
-                            width: "320",
+                            height: "350",
+                            width: "270",
                             src: movie.ImageURL
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
