@@ -1,0 +1,27 @@
+.card {
+  margin-bottom: 2rem;
+  background-color: rgb(247, 247, 247);
+  height: 100%;
+  width: 100%;
+}
+
+.card-image {
+  height: 390px;
+  width: 350px;
+  padding: 2;
+}
+
+.card-title {
+  font-weight: 900;
+  flex-grow: 1;
+}
+.card-description {
+  font-size: 15px;
+  overflow: hidden;
+  height: 135px;
+}
+
+.view-btn {
+  width: 90%;
+  margin-top: 20px;
+}

@@ -1,6 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { Button, Col, Container, Row, Image } from "react-bootstrap";
+
+import "./movie-view.scss";
+
 export class MovieView extends React.Component {
   keypressCallback(event) {
     console.log(event.key);
@@ -16,39 +20,54 @@ export class MovieView extends React.Component {
     const { movie, onBackClick } = this.props;
 
     return (
-      <div className="movie-view">
-        <div className="movie-poster">
-          <img
-            crossOrigin="anonymous"
-            height="500"
-            width="330"
-            src={movie.ImageURL}
-          />
-        </div>
-        <div className="movie-title">
-          <span className="label">Title: </span>
-          <span className="value">{movie.Title}</span>
-        </div>
-        <div className="movie-genre">
-          <span className="label">Genre: </span>
-          <span className="value">{movie.Genre.Name}</span>
-        </div>
-        <div className="movie-description">
-          <span className="label">Description: </span>
-          <span className="value">{movie.Description}</span>
-        </div>
-        <div className="movie-director">
-          <span className="label">Director: </span>
-          <span className="value">{movie.Director.Name}</span>
-        </div>
-        <button
+      <Container className="movie-view">
+        <Row className="movie-title mb-4 mt-4">
+          <Col className="value">{movie.Title}</Col>
+        </Row>
+        <Row className="mb-3 gx-5">
+          <Col className="movie-poster  mb-4" md={5} lg={4}>
+            <Image
+              crossOrigin="anonymous"
+              height="500"
+              width="400"
+              src={movie.ImageURL}
+            />
+          </Col>
+        </Row>
+        <Row className="movie-genre" xs={12} sm={12} md={7}>
+          <Col className="label" xs={5} sm={4} md={3} lg={2}>
+            Genre:{" "}
+          </Col>
+          <Col className="value" xs="auto" sm="auto" md="auto" lg="auto">
+            {movie.Genre.Name}
+          </Col>
+        </Row>
+        <Row className="movie-description" xs={12} sm={12} md={7}>
+          <Col className="label" xs={5} sm={4} md={3} lg={2}>
+            Description:{" "}
+          </Col>
+          <Col className="value" xs={7} sm={8} md={9} lg={10}>
+            {movie.Description}
+          </Col>
+        </Row>
+        <Row className="movie-director">
+          <Col className="label" xs={5} sm={4} md={3} lg={2}>
+            Director:{" "}
+          </Col>
+          <Col className="value" xs={7} sm={8} md={9} lg="auto">
+            {movie.Director.Name}
+          </Col>
+        </Row>
+        <Button
+          className="back-button my-4 px-4 py-2"
+          variant="secondary"
           onClick={() => {
             onBackClick(null);
           }}
         >
           Back
-        </button>
-      </div>
+        </Button>
+      </Container>
     );
   }
 }

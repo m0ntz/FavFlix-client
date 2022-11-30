@@ -1,0 +1,43 @@
+.card {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f7f7;
+  margin-bottom: 2rem;
+}
+
+.card-image {
+  height: 390px;
+  width: 350px;
+  padding: 2px;
+}
+
+.card-title {
+  flex-grow: 1;
+  font-weight: 900;
+}
+
+.card-description {
+  height: 135px;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.view-btn {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.favflix {
+  color: #4682b4;
+}
+
+.movie-title {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.label {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=index.e3f97e84.css.map */
