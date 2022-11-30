@@ -6,13 +6,22 @@
 }
 
 .card-image {
-  height: 390px;
-  width: 350px;
+  height: 350px;
+  width: 300px;
+  text-align: center;
   padding: 2px;
 }
 
+.card-text-body {
+  min-width: 0;
+  flex-direction: column;
+  display: flex;
+}
+
 .card-title {
+  text-align: center;
   flex-grow: 1;
+  padding-top: 10px;
   font-weight: 900;
 }
 

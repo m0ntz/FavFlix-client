@@ -17,10 +17,11 @@ export class MovieCard extends React.Component {
           crossOrigin="anonymous"
           src={movie.ImageURL}
         />
-        <Card.Body>
+        <Card.Body className="card-text-body">
           <Card.Title>{movie.Title}</Card.Title>
           <Card.Text className="card-description">
-            {movie.Description}
+            {movie.Description.slice(0, 160)}
+            ...
           </Card.Text>
           <Button
             className="view-btn"

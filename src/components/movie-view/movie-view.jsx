@@ -24,12 +24,12 @@ export class MovieView extends React.Component {
         <Row className="movie-title mb-4 mt-4">
           <Col className="value">{movie.Title}</Col>
         </Row>
-        <Row className="mb-3 gx-5">
+        <Row className="mb-3">
           <Col className="movie-poster  mb-4" md={5} lg={4}>
             <Image
               crossOrigin="anonymous"
-              height="500"
-              width="400"
+              height="400"
+              width="320"
               src={movie.ImageURL}
             />
           </Col>
