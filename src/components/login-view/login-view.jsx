@@ -43,8 +43,9 @@ export function LoginView(props) {
                     />
                   </Form.Group>
                   <Button
-                    variant="primary"
+                    variant="dark"
                     type="submit"
+                    className="my-3"
                     onClick={handleSubmit}
                   >
                     Login
