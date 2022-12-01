@@ -20,7 +20,7 @@ export function RegistrationView(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(username, password, email, birthday);
-    props.Registration(username);
+    props.toRegister(username);
   };
 
   return (
@@ -76,19 +76,13 @@ export function RegistrationView(props) {
                   </Form.Group>
 
                   <Form.Group>
-                    <Button type="submit" onClick={handleSubmit}>
-                      Register
-                    </Button>
-                  </Form.Group>
-
-                  <Form.Group>
                     <Button
-                      type="button"
-                      onClick={() => {
-                        props.onBackClick(null);
-                      }}
+                      variant="dark"
+                      type="submit"
+                      className="my-3"
+                      onClick={handleSubmit}
                     >
-                      Return to Login Page
+                      Register
                     </Button>
                   </Form.Group>
                 </Form>

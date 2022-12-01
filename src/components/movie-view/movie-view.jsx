@@ -28,8 +28,9 @@ export class MovieView extends React.Component {
           <Col className="movie-poster  mb-4" md={5} lg={4}>
             <Image
               crossOrigin="anonymous"
-              height="350"
-              width="270"
+              className="movie-img"
+              height="350px"
+              width="270px"
               src={movie.ImageURL}
             />
           </Col>
