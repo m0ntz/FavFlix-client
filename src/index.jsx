@@ -19,7 +19,8 @@ class FavFlixApplication extends React.Component {
           className="navbar"
         >
           <Navbar.Brand href="/">
-            <img src={logo} className="logo" /> FavFlix
+            <img src={logo} className="logo" width="40px" height="40px" />{" "}
+            FavFlix
           </Navbar.Brand>
 
           <Navbar.Toggle />
