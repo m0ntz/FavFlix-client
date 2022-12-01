@@ -10,7 +10,7 @@ export class MovieCard extends React.Component {
     const { movie, onMovieClick } = this.props;
 
     return (
-      <Card>
+      <Card id="movie-card">
         <Card.Img
           className="card-image"
           variant="top"
@@ -20,7 +20,7 @@ export class MovieCard extends React.Component {
         <Card.Body className="card-text-body">
           <Card.Title>{movie.Title}</Card.Title>
           <Card.Text className="card-description">
-            {movie.Description.slice(0, 160)}
+            {movie.Description.slice(0, 130)}
             ...
           </Card.Text>
           <Button
