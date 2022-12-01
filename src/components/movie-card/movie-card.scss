@@ -1,0 +1,35 @@
+#movie-card {
+  background-color: rgb(245, 245, 245);
+  color: rgb(9, 27, 73);
+  height: 100%;
+}
+
+.card-image {
+  height: 280px;
+  width: 250px;
+  text-align: center;
+  padding: 2;
+}
+
+.card-text-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.card-title {
+  font-weight: 900;
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 5px;
+}
+.card-description {
+  font-size: 15px;
+  overflow: hidden;
+  height: 120px;
+}
+
+.view-btn {
+  width: 90%;
+  margin-top: 5px;
+}
