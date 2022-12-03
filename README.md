@@ -1,5 +1,7 @@
 # FavFlix (Client)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a7497b8-46b0-45b0-9012-cb7aa54fb845/deploy-status)](https://app.netlify.com/sites/favflix-app/deploys)
+
 ## Setup
 
 To install parcel
