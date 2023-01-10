@@ -2,6 +2,20 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0a7497b8-46b0-45b0-9012-cb7aa54fb845/deploy-status)](https://app.netlify.com/sites/favflix-app/deploys)
 
+
+👉Live Version [here](https://favflix-app.netlify.app/)
+
+## Description
+This is the client-side for the FavFlix application based on its existing server-side code (REST API and database). It is a React built responsive application with routing, rich interactions, several interface views, and a polished user experience. This project aims to facilitate user requests and rendering the response from the server-side via a number of different interface views
+
+## Tech Stack
+### MERN
+- MongoDB
+- Express
+- React
+- Node.js
+
+
 ## Setup
 
 To install parcel
