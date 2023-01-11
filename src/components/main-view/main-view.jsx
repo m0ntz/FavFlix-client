@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import { RegistrationView } from "../registration-view/registration-view";
 import { LoginView } from "../login-view/login-view";
@@ -67,30 +68,63 @@ export class MainView extends React.Component {
     if (movies.length === 0) return <div className="main-view" />;
 
     return (
-      <Row className="main-view justify-content-md-center">
-        {selectedMovie ? (
-          <Col md={8}>
-            <MovieView
-              movie={selectedMovie}
-              onBackClick={(newSelectedMovie) => {
-                this.setSelectedMovie(newSelectedMovie);
-              }}
+      <BrowserRouter>
+        <Row className="main-view justify-content-md-center">
+          <Routes>
+            <Route
+              path="/register"
+              element={
+                <>
+                  {user ? (
+                    <Navigate to="/" />
+                  ) : (
+                    <Col md={5}>
+                      <RegistrationView />
+                    </Col>
+                  )}
+                </>
+              }
             />
-          </Col>
-        ) : (
-          movies.map((movie) => (
-            <Col className=" mx=0.5" xs={12} sm={6} md={4} lg={3}>
-              <MovieCard
-                key={movie._id}
-                movie={movie}
-                onMovieClick={(newSelectedMovie) => {
-                  this.setSelectedMovie(newSelectedMovie);
-                }}
-              />
-            </Col>
-          ))
-        )}
-      </Row>
+            {/* Card list: Show MovieCards for each movie, make movieData prop available */}
+            <Route
+              path="/movies/:movieId"
+              element={
+                <>
+                  {movies.length === 0 ? (
+                    <Row className="main-view"></Row>
+                  ) : (
+                    <Col>
+                      <MovieView movies={movies} />
+                    </Col>
+                  )}
+                </>
+              }
+            />
+          </Routes>
+        </Row>
+      </BrowserRouter>
     );
   }
 }
+// {/* {selectedMovie ? (
+//   <Col md={8}>
+//     <MovieView
+//       movie={selectedMovie}
+//       onBackClick={(newSelectedMovie) => {
+//         this.setSelectedMovie(newSelectedMovie);
+//       }}
+//     />
+//   </Col> */}
+// ) : (
+//   movies.map((movie) => (
+//     <Col className=" mx=0.5" xs={12} sm={6} md={4} lg={3}>
+//       <MovieCard
+//         key={movie._id}
+//         movie={movie}
+//         onMovieClick={(newSelectedMovie) => {
+//           this.setSelectedMovie(newSelectedMovie);
+//         }}
+//       />
+//     </Col>
+//   ))
+// )}
