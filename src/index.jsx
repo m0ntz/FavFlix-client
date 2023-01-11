@@ -9,7 +9,7 @@ class FavFlixApplication extends React.Component {
   render() {
     return (
       <Container>
-        <Navbar
+        {/* <Navbar
           bg="dark"
           variant="dark"
           sticky="top"
@@ -28,7 +28,7 @@ class FavFlixApplication extends React.Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <MainView />
+        <MainView /> */}
       </Container>
     );
   }
