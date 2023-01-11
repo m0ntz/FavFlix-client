@@ -8,6 +8,7 @@ import { RegistrationView } from "../registration-view/registration-view";
 import { LoginView } from "../login-view/login-view";
 import { MovieCard } from "../movie-card/movie-card";
 import { MovieView } from "../movie-view/movie-view";
+import { NavigationBar } from "../navigation-bar/navigation-bar";
 
 export class MainView extends React.Component {
   constructor() {
@@ -69,6 +70,7 @@ export class MainView extends React.Component {
 
     return (
       <BrowserRouter>
+        <NavigationBar user={user}></NavigationBar>
         <Row className="main-view justify-content-md-center">
           <Routes>
             <Route
@@ -85,7 +87,20 @@ export class MainView extends React.Component {
                 </>
               }
             />
-            {/* Card list: Show MovieCards for each movie, make movieData prop available */}
+            <Route
+              path="/login"
+              element={
+                <>
+                  {user ? (
+                    <Navigate to="/" />
+                  ) : (
+                    <Col md={5}>
+                      <LoginView onLoggedIn={(user) => setUser(user)} />
+                    </Col>
+                  )}
+                </>
+              }
+            />
             <Route
               path="/movies/:movieId"
               element={
@@ -93,7 +108,7 @@ export class MainView extends React.Component {
                   {movies.length === 0 ? (
                     <Row className="main-view"></Row>
                   ) : (
-                    <Col>
+                    <Col md={8}>
                       <MovieView movies={movies} />
                     </Col>
                   )}
