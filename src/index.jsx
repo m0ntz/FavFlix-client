@@ -27,8 +27,8 @@ class FavFlixApplication extends React.Component {
               <Nav.Link href="/">Home</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Navbar>
-        <MainView /> */}
+        </Navbar> */}
+        <MainView />
       </Container>
     );
   }
