@@ -5,6 +5,10 @@
 
 👉Live Version [here](https://favflix-app.netlify.app/)
 
+
+![image](https://user-images.githubusercontent.com/109100764/212967854-9b3624eb-389c-48bb-b2c8-fe8f3141fe84.png)
+
+
 ## Description
 This is the client-side for the FavFlix application based on its existing server-side code (REST API and database). It is a React built responsive application with routing, rich interactions, several interface views, and a polished user experience. This project aims to facilitate user requests and rendering the response from the server-side via a number of different interface views
 
