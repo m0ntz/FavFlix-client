@@ -10,7 +10,7 @@ export const ProfileView = ({ movies }) => {
   const [user, setUser] = useState(storedUser ? storedUser : null);
 
   const [username, setUsername] = useState(user.Username);
-  const [password, setPassword] = useState();
+  // const [password, setPassword] = useState();
   const [email, setEmail] = useState(user.Email);
 
   let favoriteMovies =
@@ -27,7 +27,7 @@ export const ProfileView = ({ movies }) => {
       .then((user) => {
         if (user) {
           setUser(user);
-          localStorage.setItem("user", JSON.stringify(user));
+          localStorage.setItem("username", JSON.stringify(user));
         }
       });
   };
@@ -37,7 +37,6 @@ export const ProfileView = ({ movies }) => {
 
     const data = {
       Username: username,
-      Password: password,
       Email: email,
     };
 
@@ -50,8 +49,8 @@ export const ProfileView = ({ movies }) => {
       },
     }).then((response) => {
       if (response.ok) {
-        alert("Changes saved");
-        updateUser(user.Username).then(() => window.location.reload());
+        alert("Changes saved. Please login again with your new credentials");
+        updateUser(user.Username);
       } else {
         alert("Something went wrong");
       }
@@ -68,7 +67,7 @@ export const ProfileView = ({ movies }) => {
     }).then((response) => {
       if (response.ok) {
         alert("Account successfully deleted");
-        window.location.reload();
+        // window.location.reload();
       } else {
         alert("Something went wrong");
       }
@@ -102,14 +101,6 @@ export const ProfileView = ({ movies }) => {
               type="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Form.Label>Password: </Form.Label>
-            <Form.Control
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
           <Form.Group>
