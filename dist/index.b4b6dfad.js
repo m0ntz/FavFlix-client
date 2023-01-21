@@ -37877,21 +37877,6 @@ const MainView = ()=>{
                 Authorization: `Bearer ${token}`
             }
         }).then((response)=>response.json()).then((movies)=>{
-            // const moviesFromApi = movies.map((movie) => {
-            //   return {
-            //     _id: movie.id,
-            //     Description: movie.Description,
-            //     ImageURL: movie.ImageURL,
-            //     Title: movie.Title,
-            //     Genre: {
-            //       Name: movie.Genre.Name,
-            //       Description: movie.Genre.Description,
-            //     },
-            //     Director: {
-            //       Name: movie.Director.Name,
-            //     },
-            //   };
-            // });
             console.log("movies from api:", movies);
             setMovies(movies);
         });
@@ -37907,12 +37892,12 @@ const MainView = ()=>{
                 }
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 61,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {}, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 67,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
@@ -37931,7 +37916,7 @@ const MainView = ()=>{
                             }, void 0, false)
                         }, void 0, false, {
                             fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 70,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -37950,7 +37935,7 @@ const MainView = ()=>{
                             }, void 0, false)
                         }, void 0, false, {
                             fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 84,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -37970,7 +37955,7 @@ const MainView = ()=>{
                             }, void 0, false)
                         }, void 0, false, {
                             fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 108,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -37994,7 +37979,7 @@ const MainView = ()=>{
                             }, void 0, false)
                         }, void 0, false, {
                             fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 124,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -38014,163 +37999,30 @@ const MainView = ()=>{
                             }, void 0, false)
                         }, void 0, false, {
                             fileName: "src/components/main-view/main-view.jsx",
-                            lineNumber: 144,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/main-view/main-view.jsx",
-                    lineNumber: 69,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 68,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 60,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 };
 _s(MainView, "qJlGGUVezjAjZcYMDXgwicqiZ1s=");
 _c = MainView;
-exports.default = MainView; // import React from "react";
- // import axios from "axios";
- // import Row from "react-bootstrap/Row";
- // import Col from "react-bootstrap/Col";
- // import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
- // import { RegistrationView } from "../registration-view/registration-view";
- // import { LoginView } from "../login-view/login-view";
- // import { MovieCard } from "../movie-card/movie-card";
- // import { MovieView } from "../movie-view/movie-view";
- // import { NavigationBar } from "../navigation-bar/navigation-bar";
- // export class MainView extends React.Component {
- //   constructor() {
- //     super();
- //     this.state = {
- //       movies: [],
- //       selectedMovie: null,
- //       user: null,
- //       registered: true,
- //     };
- //   }
- //   componentDidMount() {
- //     axios
- //       .get("https://myfavflixapi.herokuapp.com/movies")
- //       .then((response) => {
- //         this.setState({
- //           movies: response.data,
- //         });
- //       })
- //       .catch((error) => {
- //         console.log(error);
- //       });
- //   }
- //   setSelectedMovie(movie) {
- //     this.setState({
- //       selectedMovie: movie,
- //     });
- //   }
- //   onLoggedIn(user) {
- //     this.setState({
- //       user,
- //     });
- //   }
- //   toRegister(registered) {
- //     this.setState({
- //       registered,
- //     });
- //   }
- //   render() {
- //     const { movies, selectedMovie, user, registered } = this.state;
- //     if (!registered)
- //       return (
- //         <RegistrationView
- //           toRegister={(registered) => this.toRegister(registered)}
- //         />
- //       );
- //     /* If there's no user, the LoginView will render. If the user is logged in, the user data is passed to the LoginView */
- //     if (!user)
- //       return <LoginView onLoggedIn={(user) => this.onLoggedIn(user)} />;
- //     if (movies.length === 0) return <div className="main-view" />;
- //     return (
- //       <BrowserRouter>
- //         <NavigationBar user={user}></NavigationBar>
- //         <Row className="main-view justify-content-md-center">
- //           <Routes>
- //             <Route
- //               path="/register"
- //               element={
- //                 <>
- //                   {user ? (
- //                     <Navigate to="/" />
- //                   ) : (
- //                     <Col md={5}>
- //                       <RegistrationView />
- //                     </Col>
- //                   )}
- //                 </>
- //               }
- //             />
- //             <Route
- //               path="/login"
- //               element={
- //                 <>
- //                   {user ? (
- //                     <Navigate to="/" />
- //                   ) : (
- //                     <Col md={5}>
- //                       <LoginView onLoggedIn={(user) => setUser(user)} />
- //                     </Col>
- //                   )}
- //                 </>
- //               }
- //             />
- //             <Route
- //               path="/movies/:movieId"
- //               element={
- //                 <>
- //                   {movies.length === 0 ? (
- //                     <Row className="main-view"></Row>
- //                   ) : (
- //                     <Col md={8}>
- //                       <MovieView movies={movies} />
- //                     </Col>
- //                   )}
- //                 </>
- //               }
- //             />
- //           </Routes>
- //         </Row>
- //       </BrowserRouter>
- //     );
- //   }
- // }
- // // {/* {selectedMovie ? (
- // //   <Col md={8}>
- // //     <MovieView
- // //       movie={selectedMovie}
- // //       onBackClick={(newSelectedMovie) => {
- // //         this.setSelectedMovie(newSelectedMovie);
- // //       }}
- // //     />
- // //   </Col> */}
- // // ) : (
- // //   movies.map((movie) => (
- // //     <Col className=" mx=0.5" xs={12} sm={6} md={4} lg={3}>
- // //       <MovieCard
- // //         key={movie._id}
- // //         movie={movie}
- // //         onMovieClick={(newSelectedMovie) => {
- // //           this.setSelectedMovie(newSelectedMovie);
- // //         }}
- // //       />
- // //     </Col>
- // //   ))
- // // )}
+exports.default = MainView;
 var _c;
 $RefreshReg$(_c, "MainView");
 
@@ -38587,51 +38439,7 @@ MovieCard.propTypes = {
             Name: (0, _propTypesDefault.default).string.isRequired
         })
     }).isRequired
-}; // import React from "react";
- // import PropTypes from "prop-types";
- // import Button from "react-bootstrap/Button";
- // import Card from "react-bootstrap/Card";
- // import "./movie-card.scss";
- // export class MovieCard extends React.Component {
- //   render() {
- //     const { movie, onMovieClick } = this.props;
- //     return (
- //       <Card id="movie-card">
- //         <Card.Img
- //           className="card-image"
- //           variant="top"
- //           crossOrigin="anonymous"
- //           src={movie.ImageURL}
- //         />
- //         <Card.Body className="card-text-body">
- //           <Card.Title>{movie.Title}</Card.Title>
- //           <Card.Text className="card-description">
- //             {movie.Description.slice(0, 130)}
- //             ...
- //           </Card.Text>
- //           <Button
- //             className="view-btn"
- //             onClick={() => onMovieClick(movie)}
- //             variant="dark"
- //           >
- //             View
- //           </Button>
- //         </Card.Body>
- //       </Card>
- //     );
- //   }
- // }
- // MovieCard.propTypes = {
- //   movie: PropTypes.shape({
- //     Title: PropTypes.string.isRequired,
- //     Description: PropTypes.string.isRequired,
- //     ImageURL: PropTypes.string.isRequired,
- //     Genre: PropTypes.shape({
- //       Name: PropTypes.string.isRequired,
- //     }),
- //   }).isRequired,
- //   onMovieClick: PropTypes.func.isRequired,
- // };
+};
 var _c;
 $RefreshReg$(_c, "MovieCard");
 
