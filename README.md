@@ -6,7 +6,9 @@
 👉Live Version [here](https://favflix-app.netlify.app/)
 
 
-![image](https://user-images.githubusercontent.com/109100764/212967854-9b3624eb-389c-48bb-b2c8-fe8f3141fe84.png)
+![image](https://user-images.githubusercontent.com/109100764/213872685-01822726-d3e3-4f17-9eb0-a93630ff3412.png)
+![image](https://user-images.githubusercontent.com/109100764/213872715-4efed4f7-9d07-4378-acfd-c4143efd9885.png)
+
 
 
 ## Description
