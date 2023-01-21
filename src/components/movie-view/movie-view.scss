@@ -11,3 +11,36 @@
   margin: 0 auto;
   display: block;
 }
+
+//addon
+
+.btn-login,
+.fav-btn {
+  margin: 8px;
+}
+fav-btn .cardset {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.labeltitle {
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.description {
+  font-weight: lighter;
+  text-align: left;
+}
+
+.title {
+  padding: 15px;
+  font-size: 25px;
+  float: center;
+}
+
+.content {
+  margin-top: 70px;
+}
