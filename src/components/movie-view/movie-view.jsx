@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Row, Image, Card, Container } from "react-bootstrap";
 
 import { Link, useParams } from "react-router-dom";
@@ -11,26 +11,65 @@ export const MovieView = ({ movies }) => {
   console.log(movieId);
 
   const storedUser = JSON.parse(localStorage.getItem("username"));
+  const [user, setUser] = useState(storedUser ? storedUser : null);
   const token = localStorage.getItem("token");
 
-  const addFavorite = (movieId) => {
-    if (!token) return;
-
-    const url = `https://myfavflixapi.herokuapp.com/users/${storedUser.Username}/movies/${movieId}`;
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    };
-    fetch(url, requestOptions)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
+  const handleFavorite = () => {
+    fetch(
+      "https://myfavflixapi.herokuapp.com/users/" +
+        user.Username +
+        "/movies/" +
+        movie._id,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      }
+    )
+      .then((response) => {
+        alert("Added to favorites!");
+        return response.json();
       })
-      .catch((e) => {
-        alert("Something is wrong!");
+      .then((data) => updateUser(data))
+      .catch((err) => {
+        alert("Something went wrong");
       });
+  };
+
+  const handleRemoveFavorite = () => {
+    fetch(
+      "https://myfavflixapi.herokuapp.com/users/" +
+        user.Username +
+        "/movies/" +
+        movie._id,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      }
+    ).then((response) => {
+      if (response.ok) {
+        alert("Removed from favorites");
+        const newUser = {
+          ...user,
+          FavoriteMovies: user.FavoriteMovies.filter(
+            (movie) => movie._id != movie._id
+          ),
+        };
+        updateUser(newUser);
+      } else {
+        alert("Something went wrong");
+      }
+    });
+  };
+
+  const updateUser = (user) => {
+    localStorage.setItem("username", JSON.stringify(user));
+    setUser(user);
   };
 
   return (
@@ -41,14 +80,6 @@ export const MovieView = ({ movies }) => {
             <div className="title text-center">
               <span> {movie.Title} </span>
             </div>
-            <Button
-              className="fav-btn"
-              size="sm"
-              variant="secondary"
-              onClick={addFavorite(movie._id)}
-            >
-              Add to Favorites
-            </Button>
           </Card.Header>
           <Card.Body>
             <div>
@@ -79,6 +110,21 @@ export const MovieView = ({ movies }) => {
             <Link to="/">
               <Button className="btn-login"> Back </Button>
             </Link>
+            {storedUser.FavoriteMovies.indexOf(movie._id) >= 0 ? (
+              <Button
+                variant="danger"
+                onClick={() => handleRemoveFavorite(movie._id, "add")}
+              >
+                Remove from Favorites
+              </Button>
+            ) : (
+              <Button
+                className="button-add-favorite"
+                onClick={() => handleFavorite(movie._id, "add")}
+              >
+                + Add to Favorites
+              </Button>
+            )}
           </Card.Footer>
         </Card>
       </Row>
