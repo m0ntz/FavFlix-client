@@ -3,6 +3,8 @@ import { Button, Row, Image, Card, Container } from "react-bootstrap";
 
 import { Link, useParams } from "react-router-dom";
 
+import "./movie-view.scss";
+
 export const MovieView = ({ movies }) => {
   const { movieId } = useParams();
 
@@ -108,10 +110,14 @@ export const MovieView = ({ movies }) => {
           </Card.Body>
           <Card.Footer>
             <Link to="/">
-              <Button className="btn-login"> Back </Button>
+              <Button className="btn-login" variant="light">
+                {" "}
+                Back{" "}
+              </Button>
             </Link>
             {storedUser.FavoriteMovies.indexOf(movie._id) >= 0 ? (
               <Button
+                className="fav-btn"
                 variant="danger"
                 onClick={() => handleRemoveFavorite(movie._id, "add")}
               >
@@ -119,7 +125,8 @@ export const MovieView = ({ movies }) => {
               </Button>
             ) : (
               <Button
-                className="button-add-favorite"
+                className="button-add-favorite fav-btn"
+                variant="light"
                 onClick={() => handleFavorite(movie._id, "add")}
               >
                 + Add to Favorites

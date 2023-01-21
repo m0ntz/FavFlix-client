@@ -75,7 +75,7 @@ export const RegistrationView = () => {
           // required
         />
       </Form.Group>
-      <Button type="submit" className="button-primary">
+      <Button type="submit" className="button-primary" variant="dark">
         Register
       </Button>
     </Form>

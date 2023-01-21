@@ -5,7 +5,7 @@
 }
 
 .card-image {
-  height: 280px;
+  height: 320px;
   width: 250px;
   text-align: center;
   padding: 2px;
@@ -35,6 +35,35 @@
   margin-top: 5px;
 }
 
+html, .app-container {
+  color: #fff;
+  background-color: #000;
+}
+
+.profile-title {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.btn {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.button-delete {
+  margin-top: 5rem;
+}
+
+.fav-movies {
+  margin-top: 25px;
+}
+
 .movie-title {
   font-size: 33px;
   font-weight: bold;
@@ -47,6 +76,37 @@
 .movie-img {
   margin: 0 auto;
   display: block;
+}
+
+.btn-login, .fav-btn {
+  margin: 8px;
+}
+
+fav-btn .cardset {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.labeltitle {
+  margin-bottom: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.description {
+  text-align: left;
+  font-weight: lighter;
+}
+
+.title {
+  float: center;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.content {
+  margin-top: 70px;
 }
 
 /*# sourceMappingURL=index.e3f97e84.css.map */

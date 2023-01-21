@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Button, Form, Row, Col } from "react-bootstrap";
+import moment from "moment";
 import { MovieCard } from "../movie-card/movie-card";
+
+import "./profile-view.scss";
 
 export const ProfileView = ({ movies }) => {
   const storedToken = localStorage.getItem("token");
@@ -12,6 +15,7 @@ export const ProfileView = ({ movies }) => {
   const [username, setUsername] = useState(user.Username);
   // const [password, setPassword] = useState();
   const [email, setEmail] = useState(user.Email);
+  const bday = moment(user.Birthday).format("MMM Do YYYY");
 
   let favoriteMovies =
     movies &&
@@ -78,6 +82,7 @@ export const ProfileView = ({ movies }) => {
     <Row>
       <Col>
         <div className="profile-info">
+          <h2 className="profile-title">Account information</h2>
           <div className="user-info">
             <span className="label">Username: </span>
             <span className="value">{user.Username}</span>
@@ -88,13 +93,21 @@ export const ProfileView = ({ movies }) => {
           </div>
           <div className="user-info">
             <span className="label">Birthday: </span>
-            <span className="value">{user.Birthday}</span>
+            <span className="value">{bday}</span>
           </div>
         </div>
+        <Button
+          onClick={() => handleDeregister(user._id)}
+          className="button-delete btn"
+          type="submit"
+          variant="danger"
+        >
+          Delete Account
+        </Button>
       </Col>
       <Col>
         <Form onSubmit={handleSubmit}>
-          <h2>Update info</h2>
+          <h2 className="profile-title">Update profile</h2>
           <Form.Group>
             <Form.Label>Username: </Form.Label>
             <Form.Control
@@ -111,26 +124,21 @@ export const ProfileView = ({ movies }) => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
-          <Button type="submit" className="button-primary">
+          <Button type="submit" className="button-primary btn" variant="dark">
             Save Changes
           </Button>
         </Form>
-        <Button
-          onClick={() => handleDeregister(user._id)}
-          className="button-delete"
-          type="submit"
-          variant="danger"
-        >
-          Delete Account
-        </Button>
       </Col>
       <Row>
-        {favoriteMovies.length > 0 &&
-          favoriteMovies.map((movie) => (
-            <Col className="mb-5" key={movie._id} sm={5} md={3}>
-              <MovieCard movie={movie} />
-            </Col>
-          ))}
+        <h2 className="profile-title">My favorite movies</h2>
+        <Row className="fav-movies">
+          {favoriteMovies.length > 0 &&
+            favoriteMovies.map((movie) => (
+              <Col className="mb-5" key={movie._id} sm={5} md={3}>
+                <MovieCard movie={movie} />
+              </Col>
+            ))}
+        </Row>
       </Row>
     </Row>
   );
