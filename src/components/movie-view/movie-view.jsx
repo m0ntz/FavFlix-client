@@ -1,45 +1,37 @@
-import React, { useState } from "react";
-import {
-  Button,
-  Row,
-  Col,
-  Image,
-  Card,
-  CardGroup,
-  Container,
-} from "react-bootstrap";
-import { useParams } from "react-router";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Button, Row, Image, Card, Container } from "react-bootstrap";
+
+import { Link, useParams } from "react-router-dom";
 
 export const MovieView = ({ movies }) => {
   const { movieId } = useParams();
 
-  const movie = movies.find((m) => m.id === movieId);
-  // const movie = movies.find((m) => m._id === movieId);
-  console.log(movie);
+  const movie = movies.find((m) => m._id === movieId);
 
-  // const storedUser = JSON.parse(localStorage.getItem("username"));
-  // const token = localStorage.getItem("token");
+  console.log(movieId);
 
-  // const addFavorite = (movieId) => {
-  //   if (!token) return;
+  const storedUser = JSON.parse(localStorage.getItem("username"));
+  const token = localStorage.getItem("token");
 
-  //   const url = `https://myfavflixapi.herokuapp.com/users/${storedUser.Username}/movies/${movieId}`;
-  //   const requestOptions = {
-  //     method: "POST",
-  //     headers: {
-  //       Authorization: `Bearer ${token}`,
-  //     },
-  //   };
-  //   fetch(url, requestOptions)
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     })
-  //     .catch((e) => {
-  //       alert("Something is wrong!");
-  //     });
-  // };
+  const addFavorite = (movieId) => {
+    if (!token) return;
+
+    const url = `https://myfavflixapi.herokuapp.com/users/${storedUser.Username}/movies/${movieId}`;
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    fetch(url, requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((e) => {
+        alert("Something is wrong!");
+      });
+  };
 
   return (
     <Container className="cardset; content">
@@ -49,14 +41,14 @@ export const MovieView = ({ movies }) => {
             <div className="title text-center">
               <span> {movie.Title} </span>
             </div>
-            {/* <Button
+            <Button
               className="fav-btn"
               size="sm"
               variant="secondary"
-              onClick={addFavorite(movie.id)}
+              onClick={addFavorite(movie._id)}
             >
               Add to Favorites
-            </Button> */}
+            </Button>
           </Card.Header>
           <Card.Body>
             <div>
@@ -295,5 +287,4 @@ export const MovieView = ({ movies }) => {
   //     }).isRequired,
   //   }).isRequired,
   //   onBackClick: PropTypes.func.isRequired,
-  // };
 };
