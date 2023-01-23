@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0a7497b8-46b0-45b0-9012-cb7aa54fb845/deploy-status)](https://app.netlify.com/sites/favflix-app/deploys)
 
 
-👉Live Version [here](https://favflix-app.netlify.app/)
+👉Live Version [here](https://favflix-app.netlify.app/register)
 
 
 ![image](https://user-images.githubusercontent.com/109100764/213872685-01822726-d3e3-4f17-9eb0-a93630ff3412.png)
